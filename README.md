@@ -14,10 +14,10 @@ Browse to http://localhost:3001/test and voila! **Your first app has been create
 But wait, there's more!
 
 
-## Generic Routes
+### Generic Routes
 If you want to create a new route to '/test/test2', just create a test2.handlebars file in the 'apps/test/views' directory and reboot-js will wire up all the rest for you.
 
-## Automatic Loading of Controllers
+### Automatic Loading of Controllers
 Want to create a controller for custom routes with logic inside? Reboot loads these easily.
 
 1. Create a controller in '/apps/test/**code**/testController.js'
