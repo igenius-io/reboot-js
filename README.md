@@ -5,8 +5,8 @@ Eg.
 Create a default server.js file in your node app and paste in the code below.
 
 ```
-var reboot = require('./lib/reboot-js/reboot.js');
-reboot.go();
+var rebootjs = require('reboot-js');
+rebootjs.go();
 ```
 
 Browse to http://localhost:3001/test and voila! **Your first app has been created.**
