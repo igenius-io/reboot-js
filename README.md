@@ -22,7 +22,9 @@ Want to create a controller for custom routes with logic inside? Reboot loads th
 
 1. Create a controller in '/apps/test/**code**/testController.js'
 2. Create a new view file in '/apps/test/views/hello.handlebars' with the content below:
-```<h1>Hello {{ message }}</h1>```
+```
+<h1>Hello {{ message }}</h1>
+```
 3. Paste in the code below to the 'testController.js' file and reboot-js will handle the rest
 ```
 var testController = function(app) {
