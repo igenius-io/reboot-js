@@ -13,5 +13,32 @@ Browse to http://localhost:3001/test and voila! **Your first app has been create
 
 But wait, there's more!
 
-If you want to create a new route to '/test/test2', just create a test2.handlebars file in the 'apps/test/views' directory
-and reboot-js will wire up all the rest for you.
+
+## Generic Routes
+If you want to create a new route to '/test/test2', just create a test2.handlebars file in the 'apps/test/views' directory and reboot-js will wire up all the rest for you.
+
+## Automatic Loading of Controllers
+Want to create a controller for custom routes with logic inside? Reboot loads these easily.
+
+1. Create a controller in '/apps/test/**code**/testController.js'
+2. Create a new view file in '/apps/test/views/hello.handlebars' with the content ```<h1>Hello {{ message }}</h1>```
+3. Paste in the code below to the controller - and reboot-js will handle the rest
+```
+var testController = function(app) {
+
+    // Generic Catch All SPA Views (put in last)
+    app.get('/test/hello', function(req, res) {
+
+        var viewParams = {
+            layout : __dirname + '/../views/layouts/layout',
+            viewFile : __dirname + '/../views/hello',
+            message : 'NPM World'
+        };
+
+    });
+}
+
+module.exports = testController;
+```
+
+Note - The **app** variable in the function(**app**) is the express object, giving you access to use express in controllers.
