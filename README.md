@@ -33,6 +33,7 @@ var testController = function(app) {
             message : 'NPM World'
         };
 
+        res.render(viewParams.viewFile, viewParams);
     });
 }
 module.exports = testController;
