@@ -39,6 +39,7 @@ module.exports = testController;
 ```
 
 **Test this out**
-Browse to http://localhost:3001/test/hello and snap dog! You have just run an express route that links to a custom layout file, customer view file and imported a variable that displays when called in the hello.handlebars file
+
+Browse to <http://localhost:3001/test/hello> and snap dog! You have just run an express route that links to a custom layout file, customer view file and imported a variable that displays when called in the hello.handlebars file
 
 Note - The **app** variable in the function(**app**) is the express object, giving you access to use express in controllers.
