@@ -1,0 +1,33 @@
+{
+  "name": "reboot-js",
+  "version": "1.0.0",
+  "description": "reboot-js framework for express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igenius-io/reboot-js.git"
+  },
+  "keywords": [
+    "reboot-js",
+    "express"
+  ],
+  "author": "adam johnstone - adamjohnstone.co",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igenius-io/reboot-js/issues"
+  },
+  "homepage": "https://github.com/igenius-io/reboot-js#readme",
+  "dependencies": {
+    "ascii-art": "0.0.2-alpha",
+    "body-parser": "^1.14.1",
+    "compression": "^1.6.0",
+    "express": "^4.13.4",
+    "express-handlebars": "^2.0.1",
+    "mkdirp": "^0.5.1",
+    "nedb": "^1.7.1",
+    "underscore": "^1.8.3"
+  }
+}
