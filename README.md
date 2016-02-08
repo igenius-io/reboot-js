@@ -9,7 +9,7 @@ var rebootjs = require('reboot-js');
 rebootjs.go();
 ```
 
-Browse to http://localhost:3001/test and voila! **Your first app has been created.**
+Browse to <http://localhost:3001/test> and voila! **Your first app has been created.**
 
 But wait, there's more!
 
