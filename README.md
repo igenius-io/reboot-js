@@ -25,7 +25,7 @@ Want to create a controller for custom routes with logic inside? Reboot loads th
 3. Paste in the code below to the 'testController.js' file and reboot-js will handle the rest
 ```
 var testController = function(app) {
-    // Generic Catch All SPA Views (put in last)
+
     app.get('/test/hello', function(req, res) {
         var viewParams = {
             layout : __dirname + '/../views/layouts/layout',
