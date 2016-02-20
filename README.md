@@ -9,6 +9,8 @@ var rebootjs = require('reboot-js');
 rebootjs.go();
 ```
 
+Next run **node server.js** from the command line.
+
 Browse to <http://localhost:3001/test> and voila! **Your first app has been created.**
 
 But wait, there's more!
