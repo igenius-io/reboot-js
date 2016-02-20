@@ -44,3 +44,23 @@ module.exports = testController;
 Browse to <http://localhost:3001/test/hello> and snap dog! You have just run an express route that links to a custom layout file, customer view file and imported a variable that displays when called in the hello.handlebars file
 
 Note - The **app** variable in the function(**app**) is the express object, giving you access to use express in controllers.
+
+### Using your own reboot-js config
+If you want to use your own reboot config, try the below.
+
+```
+var rebootjs = require('reboot-js');
+
+var rebootConfig = {
+  "port" : 3001,
+  "env" : "development",
+  "reboot-apps-directory" : "apps",
+  "reboot-www-directory" : "apps/www",
+  "default-layout" : "layout",
+  "default-viewfile" : "index",
+  "partials-directory" : "views/partials/",
+  "layouts-directory" : "views/layouts/"
+};
+
+rebootjs.go(rebootConfig);
+```

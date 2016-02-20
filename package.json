@@ -1,6 +1,6 @@
 {
   "name": "reboot-js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "reboot-js framework for express",
   "main": "index.js",
   "scripts": {
